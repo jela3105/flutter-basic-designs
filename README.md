@@ -1,6 +1,6 @@
 # designs
 
-A new Flutter project.
+Project to learn how to create basics desings in flutter
 
 ## Getting Started
 
