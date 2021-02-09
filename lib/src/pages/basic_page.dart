@@ -12,6 +12,7 @@ class BasicPage extends StatelessWidget {
           _principaImage(),
           _header(),
           _accions(),
+          _textParagraph(),
         ],
       ),
     );
@@ -84,6 +85,16 @@ class BasicPage extends StatelessWidget {
           style: TextStyle(fontSize: 15.0, color: Colors.blue),
         ),
       ],
+    );
+  }
+
+  _textParagraph() {
+    return Container(
+      padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 40.0),
+      child: Text(
+        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+        textAlign: TextAlign.justify,
+      ),
     );
   }
 }
