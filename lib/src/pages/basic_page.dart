@@ -11,6 +11,7 @@ class BasicPage extends StatelessWidget {
         children: <Widget>[
           _principaImage(),
           _header(),
+          _accions(),
         ],
       ),
     );
@@ -58,6 +59,30 @@ class BasicPage extends StatelessWidget {
           '41',
           style: TextStyle(fontSize: 20.0),
         )
+      ],
+    );
+  }
+
+  Widget _accions() {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: <Widget>[
+        _action(Icons.call, 'CALL'),
+        _action(Icons.near_me, 'ROUTE'),
+        _action(Icons.share, 'SHARE'),
+      ],
+    );
+  }
+
+  _action(IconData icon, String text) {
+    return Column(
+      children: <Widget>[
+        Icon(icon, color: Colors.blue, size: 40.0),
+        SizedBox(height: 5.0),
+        Text(
+          text,
+          style: TextStyle(fontSize: 15.0, color: Colors.blue),
+        ),
       ],
     );
   }
