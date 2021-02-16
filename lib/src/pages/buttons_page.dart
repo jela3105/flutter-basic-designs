@@ -36,8 +36,11 @@ class ButtonsPage extends StatelessWidget {
         height: 360.0,
         width: 360.0,
         decoration: BoxDecoration(
-          color: Colors.pink,
           borderRadius: BorderRadius.circular(80.0),
+          gradient: LinearGradient(colors: [
+            Color.fromRGBO(236, 98, 188, 1.0),
+            Color.fromRGBO(241, 142, 172, 10.0)
+          ]),
         ),
       ),
     );
