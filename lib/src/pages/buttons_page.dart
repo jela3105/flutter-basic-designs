@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 class ButtonsPage extends StatelessWidget {
@@ -28,9 +30,25 @@ class ButtonsPage extends StatelessWidget {
       ),
     );
 
+    final pinkBox = Transform.rotate(
+      angle: -pi / 5.0,
+      child: Container(
+        height: 360.0,
+        width: 360.0,
+        decoration: BoxDecoration(
+          color: Colors.pink,
+          borderRadius: BorderRadius.circular(80.0),
+        ),
+      ),
+    );
+
     return Stack(
       children: <Widget>[
         gradient,
+        Positioned(
+          top: -100.0,
+          child: pinkBox,
+        ),
       ],
     );
   }
