@@ -9,6 +9,13 @@ class ButtonsPage extends StatelessWidget {
       body: Stack(
         children: <Widget>[
           _backgroundApp(),
+          SingleChildScrollView(
+            child: Column(
+              children: <Widget>[
+                _titles(),
+              ],
+            ),
+          ),
         ],
       ),
     );
@@ -53,6 +60,36 @@ class ButtonsPage extends StatelessWidget {
           child: pinkBox,
         ),
       ],
+    );
+  }
+
+  Widget _titles() {
+    return SafeArea(
+      child: Container(
+        padding: EdgeInsets.all(20.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Text(
+              'Clssify transaction',
+              style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 30.0,
+                  fontWeight: FontWeight.bold),
+            ),
+            SizedBox(
+              height: 10.0,
+            ),
+            Text(
+              'Clssify this transaction into a particular category',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 18.0,
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
