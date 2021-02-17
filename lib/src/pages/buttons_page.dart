@@ -18,6 +18,27 @@ class ButtonsPage extends StatelessWidget {
           ),
         ],
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
+        fixedColor: Colors.pink,
+        backgroundColor: Color.fromRGBO(55, 57, 84, 1.0),
+        unselectedItemColor: Color.fromRGBO(116, 117, 152, 1.0),
+        items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.calendar_today),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.pie_chart_outlined),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.supervised_user_circle),
+            label: '',
+          ),
+        ],
+      ),
     );
   }
 
