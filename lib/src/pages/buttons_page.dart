@@ -131,27 +131,29 @@ class ButtonsPage extends StatelessWidget {
       children: [
         TableRow(
           children: [
-            _createRoundedButton(),
-            _createRoundedButton(),
+            _createRoundedButton(Colors.blue, Icons.border_all, 'Border all'),
+            _createRoundedButton(Colors.purpleAccent, Icons.dry, 'Dry'),
           ],
         ),
         TableRow(
           children: [
-            _createRoundedButton(),
-            _createRoundedButton(),
+            _createRoundedButton(
+                Colors.deepPurpleAccent, Icons.store_sharp, 'Store sharp'),
+            _createRoundedButton(Colors.redAccent, Icons.event, 'Event'),
           ],
         ),
         TableRow(
           children: [
-            _createRoundedButton(),
-            _createRoundedButton(),
+            _createRoundedButton(Colors.cyan, Icons.inbox, 'Inbox'),
+            _createRoundedButton(
+                Colors.yellowAccent, Icons.eject_sharp, 'Eject sharp'),
           ],
         ),
       ],
     );
   }
 
-  Widget _createRoundedButton() {
+  Widget _createRoundedButton(Color color, IconData icon, String text) {
     return BackdropFilter(
       filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
       child: Container(
