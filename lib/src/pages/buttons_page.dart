@@ -168,11 +168,11 @@ class ButtonsPage extends StatelessWidget {
           children: <Widget>[
             SizedBox(height: 5.0),
             CircleAvatar(
-              backgroundColor: Colors.pinkAccent,
+              backgroundColor: color,
               radius: 35.0,
-              child: Icon(Icons.swap_calls, color: Colors.white, size: 30.0),
+              child: Icon(icon, color: Colors.white, size: 30.0),
             ),
-            Text('Thing', style: TextStyle(color: Colors.pinkAccent)),
+            Text(text, style: TextStyle(color: Colors.pinkAccent)),
             SizedBox(height: 5.0)
           ],
         ),
