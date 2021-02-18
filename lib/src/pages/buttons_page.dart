@@ -1,4 +1,5 @@
 import 'dart:math';
+import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
@@ -151,25 +152,28 @@ class ButtonsPage extends StatelessWidget {
   }
 
   Widget _createRoundedButton() {
-    return Container(
-      height: 180.0,
-      margin: EdgeInsets.all(20.0),
-      decoration: BoxDecoration(
-        color: Color.fromRGBO(62, 66, 107, 0.7),
-        borderRadius: BorderRadius.circular(20.0),
-      ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: <Widget>[
-          SizedBox(height: 5.0),
-          CircleAvatar(
-            backgroundColor: Colors.pinkAccent,
-            radius: 35.0,
-            child: Icon(Icons.swap_calls, color: Colors.white, size: 30.0),
-          ),
-          Text('Thing', style: TextStyle(color: Colors.pinkAccent)),
-          SizedBox(height: 5.0)
-        ],
+    return BackdropFilter(
+      filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
+      child: Container(
+        height: 180.0,
+        margin: EdgeInsets.all(20.0),
+        decoration: BoxDecoration(
+          color: Color.fromRGBO(62, 66, 107, 0.7),
+          borderRadius: BorderRadius.circular(20.0),
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: <Widget>[
+            SizedBox(height: 5.0),
+            CircleAvatar(
+              backgroundColor: Colors.pinkAccent,
+              radius: 35.0,
+              child: Icon(Icons.swap_calls, color: Colors.white, size: 30.0),
+            ),
+            Text('Thing', style: TextStyle(color: Colors.pinkAccent)),
+            SizedBox(height: 5.0)
+          ],
+        ),
       ),
     );
   }
