@@ -16,5 +16,10 @@ For help getting started with Flutter, view our
 samples, guidance on mobile development, and a full API reference.
 
 ## Basic Design
-
 ![Basic design](https://user-images.githubusercontent.com/46289656/107909683-5c1c6980-6f1e-11eb-94f9-ee999a770185.jpg)
+
+## Basic Design
+![Buttons](https://user-images.githubusercontent.com/46289656/108462568-6dc58000-7242-11eb-8fb9-491da8c26073.gif)
+
+## Basic Design
+![Scroll](https://user-images.githubusercontent.com/46289656/108462572-6ef6ad00-7242-11eb-8b7e-a3e7929ad07f.gif)
